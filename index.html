@@ -3,23 +3,42 @@
 <head>
     <title>s의 독서록</title>
     <mata charset="utf-8">
-    <style>
-        h1{
-            color:aqua(163,18,112);
-            text-align: center;
-            font-size:50px;
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function a() {
+            alert("환영합니다")
+            location.href="main.html"
         }
-        a {
-            text-decoration: none;
+        function b() {
+            alert("환영합니다")
+            location.href="signup.html"
         }
-    </style>
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <link href="signup.css" rel="stylesheet">
+    <script src="signup.js"></script>
 </head>
 <body>
-<h1 style="color:gray; 
+<h1 style="color:pink; 
 text-align: center;font-size: 50px;">S의 독서록</h1>
-<h1 style="color:aqua; 
-text-align: center;font-size: 45px;"><a href="main.html">환영합니다</a></h1>
-<h1 style="color:lightsalmon; 
-text-align: center;font-size: 30px;">Click above</h1>
+
+<div class="wrapper">
+<div class="email">
+    <h1 style="color:skyblue; font-size: 20px;">이메일 입력</h1>
+    <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+    <div id="emailError" class="error"></div>
+</div>
+<div class="password">
+    <h1 style="color:skyblue; font-size: 20px;">비밀번호 입력</h1>
+    <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+    <div id="passwordError" class="error"></div>
+</div>
+<button><a onclick="a()">로그인</a></button>
+<button><a onclick="b()">회원가입</a></button>
+</div>
+
 </body>
-</html>
+</html>                         
